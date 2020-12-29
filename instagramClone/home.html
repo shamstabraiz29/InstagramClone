@@ -9,24 +9,28 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Home.css" />
     <script
       src="https://kit.fontawesome.com/9b5d93d3fe.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-light"">
     <section id="navBar">
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-white">
         <div class="container-fluid">
-          <div class="container" style="width: 78%;">
+          <div class="container">
             <div class="logo">
-              <a class="navbar-brand"><img src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png" alt=""></a>
+              <a class="navbar-brand"
+                ><img
+                  src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png"
+                  alt=""
+              /></a>
             </div>
             <form class="d-flex">
               <div class="input-div">
                 <div class="input-div">
-                  <input  
+                  <input
                     class="form-control me-2 searchField"
                     type="search"
                     placeholder="Search"
@@ -39,7 +43,7 @@
               </div>
             </form>
             <div class="icons d-flex">
-              <div><i class="fa  fa-home"></i></div>
+              <div><i class="fa fa-home"></i></div>
               <div><i class="fab fa-facebook-messenger"></i></div>
               <div><i class="fa fa-compass"></i></div>
               <div><i class="fa fa-heart"></i></div>
@@ -56,6 +60,75 @@
           </div>
         </div>
       </nav>
+    </section><br><br>
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="card mb-3">
+              <div class="profile d-flex">
+                <img
+                  src="assets/images/b.jpg"
+                  class="rounded-circle ml-2 mb-1 mt-2"
+                  alt=""
+                  width="35px"
+                  height="35px"
+                />
+                <p class="ml-2 mb-1 mt-3"><a href="">Here is Name</a></p>
+              </div>
+              <img src="assets/images/b.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="img-icons mb-2">
+                  <i class="fa fa-heart"></i>
+                  <i class="fa fa-comment"></i>
+                  <i class="fab fa-telegram-plane"></i>
+                </div>
+                <div class="profile d-flex">
+                  <img
+                    src="assets/images/b.jpg"
+                    class="rounded-circle"
+                    alt=""
+                    width="22px"
+                    height="22px"
+                  />
+                  <p class="ml-2">
+                    Liked by <a href="">here is Name</a> and others
+                  </p>
+                </div>
+                <div class="readMore">  
+                  <p>
+                    <a href="">Here is Name</a>: The new strain of coronavirus
+                    linked to a rapid rise in infections in Britain has been
+                    detected in three UK...
+                    <button type="button" class="btn">more</button>
+                  </p>
+                 
+                </div>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <div class="addComment">
+                  <form action="">
+                    <hr>
+                    <input type="text"  placeholder="Add a comment">
+                  </form>
+                  <div class="post">
+                    <a href="">Post</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card mb-3">
+              <img src="assets/images/a.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p>Here is Side Bar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
