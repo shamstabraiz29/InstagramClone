@@ -227,7 +227,7 @@ header .nav-input{
    margin-left: 30px;
 }
 .links{
-    width: 58%;
+    width: 55%;
     margin: auto;
 }
 .link{
@@ -235,23 +235,4 @@ header .nav-input{
     margin: 7px 25px;
     font-size: 15px;
     color: #8e8e8e;
-}
-.galleryContainer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px;
-    margin: auto;
-    width: 70%;
-    padding-top: 20px;
-
-}
-.galleryImg{
-    width: 100%;
-    transition: all 0.3s ease 0s;
-
-}
-.galleryImg:hover{
-    width: 100%;
-    transition: all 0.3s ease 0s;
-
 }

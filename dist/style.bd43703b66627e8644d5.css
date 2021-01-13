@@ -242,16 +242,8 @@ header .nav-input{
     grid-gap: 30px;
     margin: auto;
     width: 70%;
-    padding-top: 20px;
-
 }
 .galleryImg{
-    width: 100%;
-    transition: all 0.3s ease 0s;
-
-}
-.galleryImg:hover{
-    width: 100%;
-    transition: all 0.3s ease 0s;
+    /* width: 30%; */
 
 }

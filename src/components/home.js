@@ -8,8 +8,6 @@ export const home = () =>{
 
 const sideBar = createElement('div', {class:"side-bar"},"this is sideBar")
 
-
-
 const stories = createElement('div',{class : "stories"})
 const postProfile = createElement('div',{class:"post-profile"})
 
@@ -46,7 +44,10 @@ const postImg = createElement('img',{src:"https://images.unsplash.com/photo-1481
 
 const post = createElement('div',{class:"post"},postImg,postIcons,postDetails,postInputDiv)
 
-const posts = createElement('div',{class:"posts"}, postProfile,post)
+
+
+    const posts = createElement('div',{class:"posts"}, postProfile,post)
+
 const main = createElement('div', {class:"main"},stories,posts)
 
 
