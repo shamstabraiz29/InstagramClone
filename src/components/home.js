@@ -102,7 +102,7 @@ export const home = () => {
   const sideBarName = createElement(
     "h4",
     { class: "sidebar-user-name" },
-    " Salman khan"
+    " Salman "
   );
 
   const sideBarImg = createElement("img", {

@@ -4,6 +4,7 @@ import { home } from "./home";
 import { explore } from "./explore";
 import { messenger } from "./messenger";
 import { notification } from "./notification";
+import { Error } from "./error"
 
 export const Layout = () => {
   if (location.pathname === "/") {
@@ -16,5 +17,7 @@ export const Layout = () => {
     return messenger();
   }else if(location.pathname === "/notification"){
     return notification();
+  }else{
+    return Error()
   }
 };

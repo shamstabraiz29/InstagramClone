@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/error.js":
+/*!*********************************!*\
+  !*** ./src/components/error.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Error\": () => /* binding */ Error\n/* harmony export */ });\n/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../react */ \"./src/react/index.js\");\n\nvar Error = function Error() {\n  return (0,_react__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', {\n    \"class\": \"error-Div\"\n  }, \"Here is Error\");\n};\n\n//# sourceURL=webpack://instagram-clone-in-js/./src/components/error.js?");
+
+/***/ }),
+
 /***/ "./src/components/explore.js":
 /*!***********************************!*\
   !*** ./src/components/explore.js ***!
@@ -56,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Layout\": () => /* binding */ Layout\n/* harmony export */ });\n/* harmony import */ var _profile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./profile */ \"./src/components/profile.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/components/home.js\");\n/* harmony import */ var _explore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./explore */ \"./src/components/explore.js\");\n/* harmony import */ var _messenger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./messenger */ \"./src/components/messenger.js\");\n/* harmony import */ var _notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./notification */ \"./src/components/notification.js\");\n\n\n\n\n\nvar Layout = function Layout() {\n  if (location.pathname === \"/\") {\n    return (0,_home__WEBPACK_IMPORTED_MODULE_1__.home)();\n  } else if (location.pathname === \"/profile\") {\n    return (0,_profile__WEBPACK_IMPORTED_MODULE_0__.profile)();\n  } else if (location.pathname === \"/explore\") {\n    return (0,_explore__WEBPACK_IMPORTED_MODULE_2__.explore)();\n  } else if (location.pathname === \"/messenger\") {\n    return (0,_messenger__WEBPACK_IMPORTED_MODULE_3__.messenger)();\n  } else if (location.pathname === \"/notification\") {\n    return (0,_notification__WEBPACK_IMPORTED_MODULE_4__.notification)();\n  }\n};\n\n//# sourceURL=webpack://instagram-clone-in-js/./src/components/layout.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Layout\": () => /* binding */ Layout\n/* harmony export */ });\n/* harmony import */ var _profile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./profile */ \"./src/components/profile.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/components/home.js\");\n/* harmony import */ var _explore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./explore */ \"./src/components/explore.js\");\n/* harmony import */ var _messenger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./messenger */ \"./src/components/messenger.js\");\n/* harmony import */ var _notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./notification */ \"./src/components/notification.js\");\n/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./error */ \"./src/components/error.js\");\n\n\n\n\n\n\nvar Layout = function Layout() {\n  if (location.pathname === \"/\") {\n    return (0,_home__WEBPACK_IMPORTED_MODULE_1__.home)();\n  } else if (location.pathname === \"/profile\") {\n    return (0,_profile__WEBPACK_IMPORTED_MODULE_0__.profile)();\n  } else if (location.pathname === \"/explore\") {\n    return (0,_explore__WEBPACK_IMPORTED_MODULE_2__.explore)();\n  } else if (location.pathname === \"/messenger\") {\n    return (0,_messenger__WEBPACK_IMPORTED_MODULE_3__.messenger)();\n  } else if (location.pathname === \"/notification\") {\n    return (0,_notification__WEBPACK_IMPORTED_MODULE_4__.notification)();\n  } else if (location.pathname === \"\") {\n    return (0,_error__WEBPACK_IMPORTED_MODULE_5__.Error)();\n  }\n};\n\n//# sourceURL=webpack://instagram-clone-in-js/./src/components/layout.js?");
 
 /***/ }),
 
