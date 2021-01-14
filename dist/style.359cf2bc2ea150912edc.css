@@ -398,10 +398,6 @@ header .nav-input {
 .imgContainer{
     flex-basis: 20%;
 }
-.profilePost{
-  margin: 30px;
-  line-height: 65px;
-}
 .proimg{
     width: 90%;
     border-radius: 50%;
@@ -436,10 +432,6 @@ header .nav-input {
     font-size: 15px;
     color: #8e8e8e;
 }
-.link a{
-  text-decoration: none;
-  color: #8e8e8e;
-}
 .galleryContainer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -451,6 +443,7 @@ header .nav-input {
 }
 .galleryImg{
     width: 100%;
+    transition: all 0.3s ease 0s;
 
 }
 .galleryImg:hover{
@@ -484,18 +477,13 @@ header .nav-input {
     border-radius: 3px;
     box-shadow: 0px 1px 5px 2px #cccc;
    }
-   .notificationBar::before{
-    content: "";
-    background-color: #fff;
-    width: 18px;
-    border-top: 1px solid #cccccccc;
-    border-left: 1px solid #cccccc;
-    height: 18px;
-    top: -9px;
-    left: 910px;
-    transform: rotate(45deg);
-    position: absolute;
-
+   .notificationBar::after{
+     content: "";
+     background-color: #0268b1;
+     width: 20px;
+     height: 20px;
+     transform: rotate(45deg);
+     position: absolute;
    }
    .followBtn{
      background-color: 0095f6;

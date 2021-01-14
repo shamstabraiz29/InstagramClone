@@ -18,26 +18,23 @@ const profileSection= createElement('div',{class:"profileContainer"},
             createElement('span',null,createElement('button',{class:'editBtn'},'Edit Profile')),
             createElement('i',{class:'fa fa-cog'})),
             createElement('div',null,
-            createElement('span',{class:'post'},'28 Posts'),
-            createElement('span',{class:'post'},'146 followers'),
-            createElement('span',{class:'post'},'146 following')),
+            createElement('span',{class:'profilePost'},'<b> 28 </b> Posts'),
+            createElement('span',{class:'profilePost'},'<b>146 </b> followers'),
+            createElement('span',{class:'profilePost'},'<b>146 </b> following')),
 
-            createElement('p',null,'kifayat kifoo'),
+            createElement('p',null,'<b>kifayat kifoo</b>'),
             createElement('p',null,'meer -e- mehfill')
             ),
         ),
 
         createElement('hr',null),
         createElement('div',{class:'links'},
-        createElement('i',{class:'link fa fa-th'},' &nbsp;   POSTS'),
-        createElement('i',{class:'link fa fa-tv'},' &nbsp;  IGTV'),
-        createElement('i',{class:'link far fa-bookmark'},' &nbsp;   SAVED'),
-        createElement('i',{class:'link fa fa-id-badge'},' &nbsp;   TAGGED'),),
+        createElement('i',{class:'link fa fa-th'},' &nbsp;  <a href="">POSTS</a>'),
+        createElement('i',{class:'link fa fa-tv'},' &nbsp;  <a href="">IGTV</a>'),
+        createElement('i',{class:'link far fa-bookmark'},' &nbsp;   <a href="">SAVED</a>'),
+        createElement('i',{class:'link fa fa-id-badge'},' &nbsp;   <a href="">TAGGED</a>'),),
 
         // gallery
-        // createElement('div',{class:'galleryContainer'},
-        // createElement('img', {class:'galleryImg',src:'https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oSjcleP4koAAX-y2ymU&tp=1&oh=82e831735b98793b25a787c9559649df&oe=60282D70 '}),
-        // )
 
     )
         let a=[
@@ -67,9 +64,6 @@ const profileSection= createElement('div',{class:"profileContainer"},
             },
             {
                 imgsrc:"https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/125807820_2713747652287193_325291426103969857_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=iTdaD0R-N0EAX_CTY4F&tp=1&oh=0a32174e7c7c5dbc438216fd1c4d29c3&oe=602A2D01"
-            },
-            {
-                imgsrc:"https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/121105787_186872212895394_8461070920078078219_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=i4p6nb4-FIAAX-mGefk&tp=1&oh=a31a9d596d852fe82c314d0444e08eeb&oe=602A3126"
             }
         ];
         let b=[];

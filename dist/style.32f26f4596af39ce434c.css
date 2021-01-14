@@ -398,10 +398,6 @@ header .nav-input {
 .imgContainer{
     flex-basis: 20%;
 }
-.profilePost{
-  margin: 30px;
-  line-height: 65px;
-}
 .proimg{
     width: 90%;
     border-radius: 50%;
@@ -436,10 +432,6 @@ header .nav-input {
     font-size: 15px;
     color: #8e8e8e;
 }
-.link a{
-  text-decoration: none;
-  color: #8e8e8e;
-}
 .galleryContainer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -451,6 +443,7 @@ header .nav-input {
 }
 .galleryImg{
     width: 100%;
+    transition: all 0.3s ease 0s;
 
 }
 .galleryImg:hover{
@@ -486,10 +479,8 @@ header .nav-input {
    }
    .notificationBar::before{
     content: "";
-    background-color: #fff;
+    background-color: #f1f1f1;
     width: 18px;
-    border-top: 1px solid #cccccccc;
-    border-left: 1px solid #cccccc;
     height: 18px;
     top: -9px;
     left: 910px;

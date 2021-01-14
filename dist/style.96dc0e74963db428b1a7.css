@@ -456,6 +456,8 @@ header .nav-input {
 .galleryImg:hover{
     width: 100%;
     transition: all 0.3s ease 0s;
+    transform: rotate(380deg);
+
 
 }
    .footer-para{

@@ -451,6 +451,7 @@ header .nav-input {
 }
 .galleryImg{
     width: 100%;
+    transition: all 0.3s ease 0s;
 
 }
 .galleryImg:hover{
