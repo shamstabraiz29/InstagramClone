@@ -2,58 +2,42 @@ import { createElement } from "../react/index";
 
 
 
-
-// let container = createElement('div',{class:"links-container"});
-
-// let div = (e) => {
-//   e.forEach((a) => {
-//     let links = createElement("a", { href: a.hrf }, a.name);
-//     container.appendChild(links);
-//   });
-// };
-
-// let div1 = div([
-//   { name: "About.", hrf: "/home" },
-//   { name: "Help.", hrf: "/about" },
-//   { name: "contact.", hrf: "/home" },
-//   { name: "Press.", hrf: "/home" },
-//   { name: "API.", hrf: "/home" },
-//   { name: "Jobs.", hrf: "/home" },
-//   { name: "privacy.", hrf: "/home" },
-//   { name: "Terms.", hrf: "/home" },
-//   { name: "Terms.", hrf: "/home" },
-//   { name: "Terms.", hrf: "/home" },
-//   { name: "Terms.", hrf: "/home" }
-// ]);
-
-
-
-
 export const footer = () => {
-
-
-
-
 
 
    let a = [
 
          {
-            name:"heloo",
+            name:"About-",
             salman:"/home"
          },
          {
-            name:"heloo",
+            name:"Help-",
             salman: "/about"
          },
          {
-            name:"heloo"
+            name:"press-"
          },
          {
-            name:"heloo"
+            name:"API-"
          },
          {
-            name:"heloo"
+            name:"Jobs-"
+         },
+         {
+            name:"Privacy-."
+         },
+         {
+            name:"Terms-."
+         },
+         {
+            name:"Top Accounts-"
+         },
+         {
+            name:"Hashtags-"
+         },
+         {
+            name:"Language-"
          },
 
 
@@ -63,20 +47,15 @@ export const footer = () => {
    let b = [];
    
    a.forEach((e) => {
-      const ul = createElement('a',{href:e.salman},e.name)
-   
-      const newdiv = createElement('div',{class:"new-div"},ul)
+      const links = createElement('a',{href:e.salman},e.name)
 
-     b.push(newdiv)
+
+     b.push(links)
 
 
    })
    
-   const kk = createElement('div', {class:'arshad'},b)
-
-
-
-
+   const footerMain = createElement('div', {class:'footer-links'},b)
 
 
   const footerPara = createElement(
@@ -91,7 +70,7 @@ export const footer = () => {
       "div",
       { class: "footer-main" },
       // container,
-      kk,
+      footerMain,
       footerPara
     )
   );

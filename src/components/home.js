@@ -1,5 +1,6 @@
 import { createElement } from "../react/index";
 import { footer } from "../components/footer";
+import { stories } from "./stories";
 
 export const home = () => {
   // SideBar start here
@@ -7,30 +8,30 @@ export const home = () => {
   const a = [
     {
       buttonName: "Follow",
-      para: "Here is full name",
-      UserName: "Kifayat kifo",
+      para: "Full name",
+      UserName: "Kifayat",
       imgsrc:
         "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/120366833_421455985505503_4946674907762157794_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=U1DTQEfrb2EAX_8hC5E&tp=1&oh=41f0362591baafe3f84f96fe600b9452&oe=6026293B",
     },
     {
       buttonName: "Follow",
-      para: "Here is full name",
-      UserName: "Azhar Ali",
+      para: "Full name",
+      UserName: "Azhar",
       imgsrc:
         "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/131896099_682865725710974_2490294181980913958_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=G_U3XllR6VIAX-02SgD&tp=1&oh=7913de46174b25ee5184819d6ea8e888&oe=6027D9FD",
     },
 
     {
       buttonName: "Follow",
-      para: "Here is full name",
-      UserName: "Tajwar Sultan",
+      para: "Full name",
+      UserName: "Tajwar",
       imgsrc:
         "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/120366833_421455985505503_4946674907762157794_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=U1DTQEfrb2EAX_8hC5E&tp=1&oh=41f0362591baafe3f84f96fe600b9452&oe=6026293B",
     },
     {
       buttonName: "Follow",
-      para: "Here is full name",
-      UserName: "Salman khan",
+      para: "Full name",
+      UserName: "Salman ",
       imgsrc:
         "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/120366833_421455985505503_4946674907762157794_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=U1DTQEfrb2EAX_8hC5E&tp=1&oh=41f0362591baafe3f84f96fe600b9452&oe=6026293B",
     },
@@ -101,7 +102,7 @@ export const home = () => {
   const sideBarName = createElement(
     "h4",
     { class: "sidebar-user-name" },
-    " UserName"
+    " Salman khan"
   );
 
   const sideBarImg = createElement("img", {
@@ -131,7 +132,7 @@ export const home = () => {
 
   // Posts Section start Here
 
-  const stories = createElement("div", { class: "stories" });
+
 
   const heartIcon = createElement("i", {
     class: "postheart  fa fa-heart",
@@ -213,7 +214,7 @@ export const home = () => {
   const profileName = createElement(
     "h6",
     { class: "profile-name" },
-    "Here is name"
+    "Salman khan"
   );
 
   const profileAdress = createElement(
@@ -240,9 +241,9 @@ export const home = () => {
     postInputDiv
   );
 
-  const main = createElement("div", { class: "main" }, stories, posts);
+  const main = createElement("div", { class: "main" }, posts);
 
   const homeDiv = createElement("div", { class: "home" }, main, sideBar);
 
-  return createElement("section", null, homeDiv);
+  return createElement("section", null, stories() ,homeDiv);
 };

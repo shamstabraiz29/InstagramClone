@@ -1,26 +1,28 @@
 body {
-  background: #d4d4d429;
+  background: #fafafa;
   margin: 0;
   padding: 0;
 }
 
-/* NavBAr section */
+/* ================================== NavBAr section */
 
 header {
   background-color: white;
   border-bottom: solid 1px #bfb5b5c4;
   height: 52px;
-  /* position: fixed;
-    width: 100%; */
+   position: fixed;
+    width: 100%; 
+    z-index: 1;
 }
 ul {
   padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: 40% 20% 40%;
   justify-content: center;
   text-align: center;
-  width: 100%;
-  margin: auto;
+  width: 93%;
+  margin-left: 14px;
 }
 header .icon {
   margin-top: 12px;
@@ -29,6 +31,9 @@ header .icon {
 }
 header .icon:hover {
   cursor: pointer;
+}
+section{
+  padding-top: 60px;
 }
 header .nav-input {
   text-align: center;
@@ -40,7 +45,6 @@ header .nav-input {
   border-radius: 3px;
   min-width: 125px;
 }
-
 .logo-div img {
   width: 95px;
 }
@@ -68,6 +72,13 @@ header .nav-input {
   vertical-align: middle;
 }
 
+
+
+
+
+/*============================================= Navbarmedia query */
+
+
 @media screen and (max-width: 960px) {
   ul {
     padding: 0;
@@ -83,22 +94,80 @@ header .nav-input {
   }
 }
 
-/* Navbar end here */
+/*======================= Navbar end here */
 
-/* /* Home page start here */
+
+/*=======================  stories setion start here */
+
+.stories{
+  display: grid;
+  grid-template-columns:16% 40.8% ;
+  margin-top: 14px;
+  text-align: center;
+}
+.name-para {
+ font-size: 12px;
+}
+.stories .story-div{
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  background:linear-gradient(to right, red, purple);;
+  border-radius: 50%;
+
+}
+.stories .story-div img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+
+.new{
+  display: flex;
+  align-items: center;
+  background-color:white;
+  height: 100px;
+  border: #bfb5b5c4  solid 1px;
+  overflow: hidden;
+}
+
+
+
+
+/*============================================= Stories media query */
+
+@media screen and (max-width: 960px){
+.stories .story-div img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}.new{
+  height: 60px;
+}
+.name-para {
+  font-size: 8px;
+ }
+}
+
+
+/* ================================ stories setion end here */
+
+
+/*==================================== Home page start here */
+
 
 .home {
-  /* border: gray solid 1px; */
   display: grid;
   grid-template-columns: 60% 40%;
-  width: 78%;
+  width: 68%;
   margin: auto;
 }
 
 .main {
-  margin-top: 40px;
   border: #bfb5b5c4 solid 1px;
   background-color: white;
+  margin-top: 20px;
 }
 .post .post-icon {
   font-size: 30px;
@@ -107,6 +176,7 @@ header .nav-input {
   margin-left: 15px;
   position: relative;
 }
+
 .post .post-icon i:hover {
   cursor: pointer;
 }
@@ -138,10 +208,9 @@ header .nav-input {
 }
 .addComment {
   width: 100%;
-  border-top: solid 1px #403d3d54;
+  border: solid 1px #403d3d54;
   border-left: none;
   border-right: none;
-  border-bottom: none;
   outline: none;
   height: 50px;
 }
@@ -200,6 +269,11 @@ header .nav-input {
 }
 
 
+
+
+
+
+    /*============================================= Home media query */
 
 
 
@@ -265,7 +339,17 @@ header .nav-input {
   }
 }
 
-/* Side Bar Start here */
+.main{
+  position: relative;
+}
+
+
+/* =================================== Home Section end here */
+
+
+
+
+/* =================================== Side Bar Start here */
 
 .side-bar-profle {
   margin-top: 16px;
@@ -274,13 +358,16 @@ header .nav-input {
 }
 
 .side-bar-profle img {
-  width: 40px;
-  height: 6vh;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   margin-top: 16px;
   margin-bottom: 5px;
   margin-left: 14px;
-  border: solid #bfb5b5c4 3px;
+  /* border: solid #bfb5b5c4 3px; */
+}
+.side-bar{
+  margin-top: -100px;
 }
 .side-bar-profle h4 {
   margin-left: 8px;
@@ -290,6 +377,7 @@ header .nav-input {
   position: absolute;
   left: 70px;
   top: 28px;
+  color: #909090;
 }
 .sugg-div {
   position: relative;
@@ -298,11 +386,11 @@ header .nav-input {
 .switch-btn {
   border: none;
   background: none;
-  color: #0268b1;
+  color: #1d9af6;
   outline: none;
   position: absolute;
   right: 14px;
-  top: 30px;
+  top: 24px;
   font-weight: 600;
 }
 
@@ -314,7 +402,7 @@ header .nav-input {
   position: absolute;
   right: 14px;
   top: 30px;
-  font-weight: 600;
+  font-weight: 600; 
 }
 .sugg-pra {
   margin-left: 22px;
@@ -326,33 +414,35 @@ header .nav-input {
 
 
 
+    /*============================================= SideBar media query */
+
 
 @media screen and (max-width: 960px) {
   .side-bar-profle img {
     width: 30px;
-    height: 5vh;
+    height: 30px;
     border-radius: 50%;
     margin-top: 8px;
-    margin-bottom: 0px;
-    margin-left: 14px;
-    border: solid #bfb5b5c4 3px;
+    margin-left: 5px;
   }
   .sugg-pra {
     font-size: 10px;
-    margin-left: 12px;
+    margin-left: 5px;
   }
   .see-all-btn {
     font-size: 9px;
     position: absolute;
     right: 0px;
+  }.side-bar{
+    margin-top: -65px;
   }
   .side-bar-profle h4 {
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 9px;
   }.sidebar-full-Name {
     font-size: 8px;
     position: absolute;
-    left: 55px;
+    left: 42px;
     top: 18px;
   }.switch-btn {
     font-size: 8px;
@@ -362,30 +452,171 @@ header .nav-input {
     font-weight: 600;
   }
   
-}
-   /* =====================================footer section =====================  */
+} 
 
 
-  .links-container {
-    margin: 0;
-    margin-top: 14px;
-    margin-left: 10px;
-    width: 100%;
+
+   /* ===================================== SideBar section End  =====================  */
+
+
+
+
+
+
+
+
+  /* =================================================== Messanger start Here */
+
+  .chat{
+    text-align: center;
   }
-   .links-container a{
-     text-transform: capitalize;
-     margin-left: 10px;
-     text-decoration: none;
-     color: #8e8e8e;
-     font-size: 12px;
-   }
+.main-messanger{
+  max-width:  65%;
+  height: 85vh;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 40% 60%;
 
-    .post .post-icon i{
-        font-size: 18px;
+ 
+  background-color:lightgray;
+  border:#bfb5b5c4 solid 1px;
+  background-color: white;
+}
+
+.send-msg-div{
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.inbox{
+  border-right:#bfb5b5c4 solid 1px;
+  overflow: auto;
+}
+
+.msg-btn{
+  background-color: #0095f6;
+  color: white;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  border-radius: 6px;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+}
+.msg-para{
+  color: #737171;
+}
+
+.msg-heading{
+  font-size: 22px;
+    line-height: 10px;
+    margin-top:10px ;
+    font-weight: 200;
+}
+
+.msg-icon-div i{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.msg-icon-div{
+  margin: auto;
+  border: rgb(0, 0, 0) solid 2px;
+  width: 96px;
+    border-radius: 50%;
+    height: 96px;
+}
+
+.inbox .inbox-top{
+  display: grid;
+  grid-template-columns: 85% 15%;
+  height: 60px;
+  border-bottom: #bfb5b5c4 solid 1px ;
+  align-items: center;
+}
+
+.inbox .inbox-top .editDiv i{
+  font-size: 22px;
+}
+
+.inbox .inbox-top .inbox-name-div .inbox-name{
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.inbox .inbox-top .inbox-name-div {
+  text-align: center;
+}
+.inbox .inbox-top .inbox-name-div i{
+      margin-left: 5px;
+}
+
+
+    /*============================================= messanger media query */
+
+    @media screen and (max-width: 960px){
+      .msg-btn{
+
+        font-weight: 400;
+        padding: 5px 9px;
+          font-size: 10px;
+          line-height: 14px;
+        
+      }
+      .msg-heading{
+        font-size: 15px;
+          line-height: 5px;
+          margin-top:10px ;
+          font-weight: 200;
+      }.msg-icon-div i{
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      .msg-icon-div{
+        width: 65px;
+          height: 65px;
+      }.msg-para{
+        font-size: 12px;
+      }
+      .inbox .inbox-top .editDiv i{
+        font-size: 15px;
+      }.inbox .inbox-top .inbox-name-div .inbox-name{
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 0px;
+      }
+      .main-messanger{
+        max-width:  90%;
+      }
     }
+  /* =================================================== Messanger end Here */
 
 
-/* profile section */
+
+/* ===================================================== profile section */
+
+
+
+
+
+.links-container {
+  margin: 0;
+  margin-top: 14px;
+  margin-left: 10px;
+  width: 100%;
+}
+ .links-container a{
+   text-transform: capitalize;
+   margin-left: 10px;
+   text-decoration: none;
+   color: #8e8e8e;
+   font-size: 12px;
+ }
+
 
 .profileContainer{
 
@@ -419,11 +650,7 @@ header .nav-input {
     margin-right: 10px;
 
 }
-.post{
-    margin: 30px;
-    font-size: 20px;
-    line-height: 65px;
-}
+
 .discreptionContainer p{
    margin-left: 30px;
 }
@@ -456,10 +683,58 @@ header .nav-input {
     transition: all 0.3s ease 0s;
 
 }
-   .footer-para{
-     text-align: center;
-    margin-left: 10px;
-    text-decoration: none;
-    color: #8e8e8e;
-    font-size: 12px;
-   }
+  
+
+
+
+
+
+   /* =====================================footer section =====================  */
+
+   .all-footer{
+    width: 36%;
+    margin: auto;
+  }
+     .footer-links{
+       margin-left: 14px;
+       margin-top: 30px;
+       text-align: center;
+       display: inline-block;
+     }
+     .footer-links a{
+       text-decoration: none;
+       font-size: 12px;
+       padding: 3px;
+       color: #c7c7c7;;
+     }
+     .footer-para{
+       text-align: center;
+       color: #c7c7c7;
+       font-size: 12px;
+     }
+  
+  
+  
+      /*============================================= Foooter media query */
+  
+  
+  
+  
+  
+     @media screen and (max-width: 960px) {
+      .footer-links a{
+        font-size: 8px;
+        padding: 3px;
+      } 
+      .footer-para{
+        font-size: 8px;
+      }
+     }
+  
+  
+  
+  
+  
+  
+  
+    /* =================================================== footer end Here */

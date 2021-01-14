@@ -1,4 +1,8 @@
 import { createElement } from '../react'
+import {  footer } from '../components/footer'
+
+
+
 export const explore = () =>{
 
 
@@ -45,6 +49,7 @@ a.forEach((e)=>{
 
 const galleryContainer=createElement('div',{class:'galleryContainer'},b);
 
-return createElement("section",null, galleryContainer);
+const footerDiv = createElement('div', { class: "all-footer" }, footer())
+return createElement("section",null, galleryContainer,footerDiv);
 
 }
