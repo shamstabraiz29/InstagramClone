@@ -4,6 +4,13 @@ import { footer } from ".//footer"
 export const messenger = () => {
 
 
+  // ============================================= Messanger Inbox Section start Here ==========================================================
+
+
+
+
+
+
     const a = [
         {
             para: "Active yesterday",
@@ -103,6 +110,10 @@ export const messenger = () => {
 
 
 
+  // ============================================= Messenger inbox Section End Here ==========================================================
+
+
+// ============================================= Messenger sendMessage Section Start Here ==========================================================
 
 
 
@@ -125,3 +136,9 @@ export const messenger = () => {
     const footerDiv = createElement('div', { class: "all-footer" }, footer())
     return createElement('section', { class: "chat" }, mainDiv, footerDiv)
 }
+
+
+// ============================================= Messenger SendMessenge Section End Here ==========================================================
+
+
+  // ============================================= Messenger Section end Here ==========================================================

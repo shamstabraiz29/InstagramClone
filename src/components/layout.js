@@ -1,23 +1,22 @@
-
 import { profile } from "./profile";
 import { home } from "./home";
 import { explore } from "./explore";
 import { messenger } from "./messenger";
 import { notification } from "./notification";
-import { Error } from "./error"
+import { Ereror } from "./error";
 
 export const Layout = () => {
   if (location.pathname === "/") {
-    return home();
+    return home();    
   } else if (location.pathname === "/profile") {
     return profile();
   } else if (location.pathname === "/explore") {
     return explore();
-  }else if(location.pathname === "/messenger"){
+  } else if (location.pathname === "/messenger") {
     return messenger();
-  }else if(location.pathname === "/notification"){
+  } else if (location.pathname === "/notification") {
     return notification();
-  }else{
-    return Error()
+  } else {
+    return Ereror();
   }
 };

@@ -73,6 +73,7 @@ const profileSection= createElement('div',{class:"profileContainer"},
                 class:"galleryImg",
                 src: e.imgsrc,
             });
+       
             b.push(galleryImage)
         })
 
