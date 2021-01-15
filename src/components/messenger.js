@@ -1,4 +1,5 @@
 import { createElement } from "../react/index"
+import { Header } from "../components/header";
 import { footer } from ".//footer"
 
 export const messenger = () => {
@@ -123,5 +124,5 @@ export const messenger = () => {
     const mainDiv = createElement("div", { class: "main-messanger" }, inBoxDiv, sendMsgDiv)
 
     const footerDiv = createElement('div', { class: "all-footer" }, footer())
-    return createElement('section', { class: "chat" }, mainDiv, footerDiv)
+    return createElement('section', { class: "chat" },Header(), mainDiv, footerDiv)
 }

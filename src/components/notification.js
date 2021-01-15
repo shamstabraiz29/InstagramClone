@@ -1,4 +1,5 @@
 import { createElement } from '../react'
+import { Header } from "../components/header";
 export const notification = () =>{
 
  // SideBar start here
@@ -109,6 +110,6 @@ export const notification = () =>{
     loopdiv,
   ));   
 
-  return notificationContainer;
 
+  return createElement("section",null,Header(),notificationContainer);
 }

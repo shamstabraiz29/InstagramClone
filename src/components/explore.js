@@ -1,5 +1,6 @@
 import { createElement } from '../react'
 import {  footer } from '../components/footer'
+import { Header } from "../components/header";
 
 
 
@@ -47,6 +48,6 @@ a.forEach((e)=>{
 const galleryContainer=createElement('div',{class:'galleryContainer'},b);
 
 const footerDiv = createElement('div', { class: "all-footer" }, footer())
-return createElement("section",null, galleryContainer,footerDiv);
+return createElement("section",null,Header(), galleryContainer,footerDiv);
 
 }

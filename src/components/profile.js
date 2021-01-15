@@ -1,5 +1,6 @@
 import { createElement } from '../react'
 import { footer } from './footer'
+import { Header } from "../components/header";
 
 export const profile = () =>{
 
@@ -79,6 +80,6 @@ const profileSection= createElement('div',{class:"profileContainer"},
         const galleryContainer=createElement('div',{class:'galleryContainer'},b);
         
         const profileFoter =createElement('div',{class:"all-footer"},footer())
-    return createElement("section",null, profileSection,galleryContainer,profileFoter);
+    return createElement("section",null,Header(), profileSection,galleryContainer,profileFoter);
 
 }
