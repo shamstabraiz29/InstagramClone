@@ -1,10 +1,9 @@
-import { createElement } from '../react'
+import { createElement } from "../react";
 import { Header } from "../components/header";
-export const notification = () =>{
+export const notification = () => {
+  // Nitification Bar start here
 
- // SideBar start here
-
- const a = [
+  const a = [
     {
       buttonName: "Follow",
       para: "started following you",
@@ -96,7 +95,7 @@ export const notification = () =>{
       sideBarImg,
       sideBarName,
       sideBarFullName,
-      switchBtn,
+      switchBtn
     );
 
     b.push(sideBarProfile);
@@ -104,12 +103,11 @@ export const notification = () =>{
 
   const loopdiv = createElement("div", { class: "more" }, b);
 
-  const notificationContainer = createElement('div',{class:'notificationContainer',},createElement(
+  const notificationContainer = createElement(
     "div",
-    { class: "side-bar notificationBar" },
-    loopdiv,
-  ));   
+    { class: "notificationContainer" },
+    createElement("div", { class: "side-bar notificationBar" }, loopdiv)
+  );
 
-
-  return createElement("section",null,Header(),notificationContainer);
-}
+  return createElement("section", null, Header(), notificationContainer);
+};

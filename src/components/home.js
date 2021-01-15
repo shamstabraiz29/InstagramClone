@@ -4,7 +4,7 @@ import { stories } from "./stories";
 import { Header } from "../components/header";
 
 export const home = () => {
-  // SideBar start here
+  //  ==============================================================   SideBar start here ===========================================================================
 
   const a = [
     {
@@ -12,14 +12,14 @@ export const home = () => {
       para: "Full name",
       UserName: "Kifayat",
       imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/120366833_421455985505503_4946674907762157794_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=U1DTQEfrb2EAX_8hC5E&tp=1&oh=41f0362591baafe3f84f96fe600b9452&oe=6026293B",
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.90.720.720a/s640x640/128437404_150735493451800_3342044046146891773_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=jTOJnYVkEq4AX-U-fKJ&tp=1&oh=4175c47cc07e8b163ded633304366bd1&oe=600388AD",
     },
     {
       buttonName: "Follow",
       para: "Full name",
       UserName: "Azhar",
       imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/131896099_682865725710974_2490294181980913958_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=G_U3XllR6VIAX-02SgD&tp=1&oh=7913de46174b25ee5184819d6ea8e888&oe=6027D9FD",
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/125428017_1707338729441387_8584104875698393892_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=YSDZAbnYJr8AX_WECxE&tp=1&oh=10b9ad77e00f21dbfa8b2ab90d62dbe6&oe=602C8504",
     },
 
     {
@@ -27,14 +27,14 @@ export const home = () => {
       para: "Full name",
       UserName: "Tajwar",
       imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/120366833_421455985505503_4946674907762157794_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=U1DTQEfrb2EAX_8hC5E&tp=1&oh=41f0362591baafe3f84f96fe600b9452&oe=6026293B",
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.100.800.800a/s640x640/132593214_237335661113453_7521410946435794261_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=o_KHR3FlQlIAX-ndom2&tp=1&oh=8977e41aac5d96df4fcd0ea837d94c83&oe=602C4E6D",
     },
     {
       buttonName: "Follow",
       para: "Full name",
       UserName: "Salman ",
       imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-19/s150x150/120366833_421455985505503_4946674907762157794_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_ohc=U1DTQEfrb2EAX_8hC5E&tp=1&oh=41f0362591baafe3f84f96fe600b9452&oe=6026293B",
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.180.1440.1440a/s640x640/124487128_227457412045877_7538632035711752549_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=OJ8ygJLLUtIAX-bnTpn&tp=1&oh=a2f0004be058473683667b7ac010ee2e&oe=60294C9C",
     },
   ];
 
@@ -103,7 +103,7 @@ export const home = () => {
   const sideBarName = createElement(
     "h4",
     { class: "sidebar-user-name" },
-    " Salman khan"
+    " Salman "
   );
 
   const sideBarImg = createElement("img", {
@@ -129,11 +129,9 @@ export const home = () => {
     footer()
   );
 
-  // SideBar End here
+  // =============================================  SideBar Section End here =================================================================
 
-  // Posts Section start Here
-
-
+  // ============================================= Posts Section start Here ==========================================================
 
   const heartIcon = createElement("i", {
     class: "postheart  fa fa-heart",
@@ -242,9 +240,12 @@ export const home = () => {
     postInputDiv
   );
 
+  // ============================================= Posts Section End Here ==========================================================
+
   const main = createElement("div", { class: "main" }, posts);
 
   const homeDiv = createElement("div", { class: "home" }, main, sideBar);
 
-  return createElement("section", null,Header(), stories() ,homeDiv);
+  return createElement("section", null, Header(), stories(), homeDiv);
+  // return createElement("section", null, stories(), homeDiv);
 };
