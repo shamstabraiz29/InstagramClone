@@ -1,12 +1,9 @@
 import { createElement } from "../react/index";
 import { footer } from "../components/footer";
 import { stories } from "./stories";
+import { Header } from "../components/header";
 
 export const home = () => {
-
-
-
-
   //  ==============================================================   SideBar start here ===========================================================================
 
   const a = [
@@ -215,7 +212,7 @@ export const home = () => {
 
   const profileName = createElement(
     "h6",
-    { class: "profile-name",},
+    { class: "profile-name" },
     "Salman khan"
   );
 
@@ -243,15 +240,12 @@ export const home = () => {
     postInputDiv
   );
 
-
- 
- // ============================================= Posts Section End Here ==========================================================
-
+  // ============================================= Posts Section End Here ==========================================================
 
   const main = createElement("div", { class: "main" }, posts);
 
-
   const homeDiv = createElement("div", { class: "home" }, main, sideBar);
 
-  return createElement("section", null, stories(), homeDiv);
+  return createElement("section", null, Header(), stories(), homeDiv);
+  // return createElement("section", null, stories(), homeDiv);
 };

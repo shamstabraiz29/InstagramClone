@@ -9,7 +9,7 @@ export const Header = () => {
   });
   const menuItems = [
     {
-      link: "/",
+      link: "/home",
       props: {
         name: "home",
         class: "icon home-icon fa fa-home",

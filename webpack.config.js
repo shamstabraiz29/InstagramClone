@@ -1,9 +1,7 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 /*
  * SplitChunksPlugin is enabled by default and replaced
@@ -27,10 +25,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
  *
  */
 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 /*
  * We've enabled TerserPlugin for you! This minifies your app
@@ -40,47 +35,53 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
  *
  */
 
-const TerserPlugin = require('terser-webpack-plugin');
-
-
-
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
 
   output: {
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    
-      historyApiFallback: {
-        index: "index.html"
+    historyApiFallback: {
+      index: "index.html",
     },
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 8080
+    port: 8080,
   },
 
   plugins: [
     new webpack.ProgressPlugin(),
-    new MiniCssExtractPlugin({ filename:'style.[contenthash].css' }),
-    new HtmlWebpackPlugin({  // Also generate a test.html
-      template: 'public/index.html'
-    })
-
+    new MiniCssExtractPlugin({ filename: "style.[contenthash].css" }),
+    new HtmlWebpackPlugin({
+      // Also generate a test.html
+      template: "public/index.html",
+    }),
   ],
-  
+
   module: {
-    rules: [{ 
-      test: /\.(js|jsx)$/,
-      include: [path.resolve(__dirname, './src')],
-      loader: 'babel-loader'
-    }, 
-    {
-      test: /\.css$/i,
-      use: [MiniCssExtractPlugin.loader, 'css-loader'],
-    },
-  ]
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        include: [path.resolve(__dirname, "./src")],
+        loader: "babel-loader",
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
+      },
+    ],
   },
 
   optimization: {
@@ -90,14 +91,14 @@ module.exports = {
       cacheGroups: {
         vendors: {
           priority: -10,
-          test: /[\\/]node_modules[\\/]/
-        }
+          test: /[\\/]node_modules[\\/]/,
+        },
       },
 
-      chunks: 'async',
+      chunks: "async",
       minChunks: 1,
       minSize: 30000,
-      name: false
-    }
+      name: false,
+    },
   },
-}
+};

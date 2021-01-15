@@ -11,6 +11,7 @@ header {
   border-bottom: solid 1px #bfb5b5c4;
   height: 52px;
   position: fixed;
+  top: 0px;
   width: 100%;
   z-index: 1;
 }
@@ -641,6 +642,37 @@ header .nav-input {
   color: #8e8e8e;
   font-size: 12px;
 }
+.footer-para {
+  text-align: center;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+/* Notification section starts here  */
+
+.notificationContainer {
+  width: 66%;
+  margin: auto;
+}
+.notificationBar {
+  overflow: auto;
+  width: 47%;
+  margin-left: auto;
+  background-color: #ffffff;
+  margin-top: 0px;
+  height: 400px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px 2px #cccc;
+}
+.followBtn {
+  background-color: 0095f6;
+  color: white;
+  padding: 5px 20;
+  border-radius: 6px;
+}
 
 /* Notification section starts here  */
 
@@ -653,23 +685,11 @@ header .nav-input {
   width: 47%;
   margin-left: auto;
   background-color: #ffffff;
-  margin-top: -5px;
+  margin-top: 0px;
   height: 400px;
   position: relative;
   border-radius: 3px;
   box-shadow: 0px 1px 5px 2px #cccc;
-}
-.notificationBar::before {
-  content: "";
-  background-color: #fff;
-  width: 18px;
-  border-top: 1px solid #cccccccc;
-  border-left: 1px solid #cccccc;
-  height: 18px;
-  top: -9px;
-  left: 910px;
-  transform: rotate(45deg);
-  position: absolute;
 }
 .followBtn {
   background-color: 0095f6;
@@ -718,21 +738,127 @@ header .nav-input {
 
 /* ===================== footer end Here */
 
-
-.error-div{
+.error-div {
   height: 50%;
   text-align: center;
   display: grid;
   align-items: center;
+}
+/* =================================================== footer end Here */
+
+/* =================================================== login form start Here */
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loginImgDiv {
+  flex-basis: 50%;
+}
+.loginImg {
+  width: 65%;
+  margin-left: auto;
+}
+.formDiv {
+  flex-basis: 25%;
+}
+@media(max-width:698px){
+  .loginImg {
+    width: 50%;
+    margin:auto;
+  }
+  .formDiv {
+    flex-basis: 80%;
+  }
+}
+.uperDiv {
   
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  margin-left: 30px;
+  border: 1px solid #dbdbdb;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.formContainer .btn {
+  width: 100%;
+  padding: 10px 110px;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: #0995f6;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+.logo {
+  width: 60%;
+}
+.or {
+  position: relative;
+  color: #8e8e8e;
+}
+.or::before {
+  content: "";
+  width: 109px;
+  left: 5px;
+  top: 8px;
+  height: 1px;
+  position: absolute;
+  background-color: #8e8e8e;
+}
+.or::after {
+  content: "";
+  width: 109px;
+  left: 152px;
+  top: 8px;
+  height: 1px;
+  position: absolute;
+  background-color: #8e8e8e;
+}
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.fblink {
+  color: #385184;
+}
+.bottomDiv {
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.bottomDiv a {
+  color: #0995f6;
+  text-decoration: none;
+}
+.imglink {
+  width: 100%;
+
+  text-align: center;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+.imglink img {
+  margin: 10px;
 }
 
-.error-div h1{
-font-size: 50px;
-}
-.error-div i{
-font-size: 20rem;
- margin-top: 100px;
-}
+/* =================================================== login form end Here */
 
+.error-div h1 {
+  font-size: 50px;
+}
+.error-div i {
+  font-size: 20rem;
+  margin-top: 100px;
+}
 
