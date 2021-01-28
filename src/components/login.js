@@ -3,6 +3,8 @@ import img1 from "../../public/Insta.png";
 import img2 from "../../public/Insta2.png";
 import img3 from "../../public/Insta3.png";
 import { footer } from "../components/footer";
+import "../styles/login.css";
+
 export const login = () => {
   const form = createElement(
     "div",
@@ -55,7 +57,7 @@ export const login = () => {
           createElement(
             "i",
             { class: "fab fa-facebook" },
-            "&nbsp;&nbsp;Log in with facebook"
+            " Log in with facebook"
           )
         ),
         createElement(
@@ -74,11 +76,7 @@ export const login = () => {
       createElement(
         "div",
         { class: "bottomDiv" },
-        createElement(
-          "p",
-          null,
-          "Don't have an account? <a href='';>Sign up</a>"
-        )
+        createElement("p", null, "Don't have an account? Sign up")
       ),
       createElement(
         "p",

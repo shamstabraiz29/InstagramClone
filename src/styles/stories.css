@@ -1,0 +1,49 @@
+/*============= stories section start here */
+
+.stories {
+  display: grid;
+  margin-top: 14px;
+  text-align: center;
+}
+.name-para {
+  font-size: 12px;
+}
+.stories .story-div {
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.stories .story-div img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: rgb(255, 48, 34) solid 2.9px;
+}
+.new {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  border: #bfb5b5c4 solid 1px;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+/*========================= Stories media query */
+
+@media screen and (max-width: 960px) {
+  .stories .story-div img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .new {
+    height: 60px;
+  }
+  .name-para {
+    font-size: 8px;
+  }
+}
+
+/* ======================== stories section end here */

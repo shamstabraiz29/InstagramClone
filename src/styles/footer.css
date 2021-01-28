@@ -1,0 +1,35 @@
+/* * ================== Footer section  */
+
+.all-footer {
+  width: 36%;
+  margin: auto;
+}
+.footer-links {
+  margin-left: 14px;
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 12px;
+  padding: 3px;
+  color: #c7c7c7;
+}
+.footer-para {
+  text-align: center;
+  color: #c7c7c7;
+  font-size: 12px;
+}
+
+/*===================== Foooter media query */
+
+@media screen and (max-width: 960px) {
+  .footer-links a {
+    font-size: 8px;
+    padding: 3px;
+  }
+  .footer-para {
+    font-size: 8px;
+  }
+}

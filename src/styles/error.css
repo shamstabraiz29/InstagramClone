@@ -1,0 +1,12 @@
+.error-div{
+    text-align: center;
+}
+
+.error-div h1 {
+    font-size: 50px;
+  }
+  .error-div i {
+    font-size: 20rem;
+    margin-top: 100px;
+  }
+  

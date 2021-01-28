@@ -1,0 +1,263 @@
+.profile-main {
+  border-bottom: solid 1px #bfb5b5c4;
+  width: 66%;
+  margin: auto;
+  margin-top: 20px;
+}
+.prof-div .prf-image {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.inner-info-div {
+  line-height: 10px;
+}
+.prof-div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.user-name-div h1 {
+  display: inline-block;
+  font-weight: 600;
+}
+.user-name-div button {
+  margin-left: 15px;
+  padding: 5px;
+  background-color: #fafafa;
+  border: solid 1px #bfb5b5c4;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.user-name-div i {
+  margin-left: 10px;
+  font-size: 22px;
+}
+.followers-divv {
+  display: flex;
+}
+.followers {
+  margin-left: 50px;
+}
+
+.followers::before {
+  content: "800";
+  margin-right: 4px;
+  font-weight: 600;
+}
+.following {
+  margin-left: 50px;
+}
+.following::before {
+  content: "90";
+  margin-right: 2px;
+  font-weight: 600;
+}
+.full-name-divv h3 {
+  font-weight: 600;
+}
+
+.post1::before {
+  content: "101";
+  margin-right: 2px;
+  font-weight: 600;
+}
+.gallery-Icons {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.postt-icon {
+  margin-right: 50px;
+  font-size: 12px;
+}
+.postt-icon::after {
+  content: "POSTS";
+  margin-left: 4px;
+}
+.igtv-icon {
+  margin-right: 50px;
+  opacity: 0.6;
+}
+.igtv-icon::after {
+  content: "IGTV";
+  margin-left: 4px;
+}
+.savedd-icon {
+  margin-right: 50px;
+  opacity: 0.6;
+}
+.savedd-icon::after {
+  content: "SAVED";
+  margin-left: 4px;
+}
+.taggedd-icon {
+  margin-right: 50px;
+  opacity: 0.6;
+}
+.taggedd-icon::after {
+  content: "TAGGED";
+  margin-left: 4px;
+}
+.profileGallery {
+  margin: auto;
+  width: 66%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  grid-gap: 20px;
+}
+.profileGallery img {
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .prof-div img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .user-name-div i {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  .followers {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .following {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .post1 {
+    font-size: 12px;
+  }
+  .user-name-div h1 {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .inner-info-div {
+    margin-left: 10px;
+  }
+  .full-name-divv h3 {
+    font-size: 12px;
+  }
+  .full-name-divv p {
+    font-size: 10px;
+  }
+  .inner-info-div {
+    line-height: 5px;
+  }
+  .user-name-div button {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .gallery-Icons {
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .postt-icon {
+    margin-right: 15px;
+    font-size: 9px;
+  }
+  .igtv-icon {
+    margin-right: 20px;
+  }
+  .savedd-icon {
+    margin-right: 20px;
+  }
+  .taggedd-icon {
+    margin-right: 20px;
+  }
+}
+
+/* modelBox start here   */
+
+.model-box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.model-main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 66%;
+  margin: auto;
+  margin-top: 50px;
+}
+.model-img {
+  width: 100%;
+}
+.model-box p {
+  color: white;
+  font-size: 50px;
+}
+
+.close-btn {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 20px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.model-comment-div {
+  background-color: white;
+  width: 100%;
+  overflow: auto;
+}
+.heart-btn {
+  color: none;
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  right: 14px;
+  top: 18px;
+  font-weight: 600;
+}
+.profle-img-model {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.model-porfile-div {
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  border-bottom: solid 1px #bfb5b5c4;
+  height: 60px;
+}
+.model-porfile-div h1 {
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.model-porfile-div h4 {
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  left: 80px;
+  font-weight: 500;
+}
+.dot {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 20px;
+}

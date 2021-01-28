@@ -1,0 +1,171 @@
+.post-div {
+  margin-top: 20px;
+  border: solid 1px #bfb5b5c4;
+  background-color: white;
+}
+
+.post-icon {
+  font-size: 30px;
+  letter-spacing: 15px;
+  margin-top: 8px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.post .post-icon i:hover {
+  cursor: pointer;
+}
+.bookmark-div {
+  position: absolute;
+  top: 1px;
+  right: 0px;
+}
+
+.fa-bookmark-o {
+  font-size: 30px;
+}
+.post-details {
+  margin-left: 15px;
+}
+.posts-like {
+  font-size: 14px;
+}
+.post-div img {
+  width: 100%;
+}
+.posts-like a {
+  font-weight: 900;
+}
+
+.post-para {
+  font-size: 10px;
+  opacity: 0.5;
+}
+.addComment {
+  width: 100%;
+  border: solid 1px #403d3d54;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  height: 50px;
+}
+
+.post-input-div {
+  position: relative;
+}
+
+.btn-div {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+.btn-div button {
+  border: none;
+  background: none;
+  color: #0268b1;
+  opacity: 0.6;
+  outline: none;
+}
+.btn-div button:hover {
+  cursor: pointer;
+}
+
+.post-profile-div {
+  display: flex;
+  height: 50px;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
+.post-profile-div img {
+  width: 33px;
+  height: 5vh;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  margin-left: 12px;
+  border: solid rgb(255, 48, 34) 2px;
+}
+
+.post-profile-div {
+  position: relative;
+}
+.profile-address {
+  position: absolute;
+  left: 56px;
+  opacity: 0.7;
+  margin-top: 27px;
+  font-size: 10px;
+}
+
+/*=============================== Home section media query */
+
+@media screen and (max-width: 960px) {
+  .post-profile-div {
+    height: 40px;
+  }
+  .post-icon i {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+  .post-icon {
+    margin-left: 5px;
+  }
+  .post-para {
+    font-size: 8px;
+  }
+  .addComment {
+    font-size: 8px;
+    width: 100%;
+    height: 40px;
+  }
+  .post-input-div {
+    position: relative;
+  }
+
+  .btn-div {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+  }
+  .posts-like {
+    font-size: 9px;
+  }
+  .posts-like a {
+    color: black;
+    font-weight: 600;
+  }
+  .btn-div button {
+    font-size: 10px;
+  }
+  .profile-address {
+    font-size: 8px;
+    margin-top: 22px;
+    position: absolute;
+    left: 49px;
+  }
+  .profile-name {
+    font-size: 10px;
+  }
+  .post-profile-div img {
+    width: 25px;
+    height: 4vh;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    border: solid #bfb5b5c4 3px;
+  }
+  .post-details {
+    margin-left: 5px;
+  }
+}
+
+.main {
+  position: relative;
+}

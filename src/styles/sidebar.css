@@ -1,0 +1,116 @@
+.home-main {
+  margin: auto;
+  width: 66%;
+  display: grid;
+  grid-template-columns: 66% 34%;
+}
+.sidebar {
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-div {
+  position: relative;
+}
+
+.profle-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.sidebar-porfile-div {
+  display: flex;
+  margin-left: 10px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.sidebar-porfile-div h1 {
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.sidebar-porfile-div h4 {
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  left: 72px;
+  color: #909090;
+}
+
+.sidebar-porfile-div button {
+  border: none;
+  background: none;
+  color: #1d9af6;
+  outline: none;
+  position: absolute;
+  right: 14px;
+  top: 24px;
+  font-weight: 600;
+}
+
+.sugg-div {
+  display: flex;
+  position: relative;
+}
+.see-all-btn {
+  border: none;
+  background: none;
+  color: black;
+  outline: none;
+  position: absolute;
+  right: 14px;
+  top: 30px;
+  font-weight: 600;
+}
+.sugg-pra {
+  margin-left: 22px;
+  margin-top: 30px;
+  opacity: 0.5;
+  font-weight: 600;
+}
+.loop-div {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.loop-div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+.loop-div h3 {
+  font-size: 15px;
+  margin-left: 15px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
+.loop-div h4 {
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+  left: 56px;
+  color: #909090;
+}
+.loop-div .side-bar-btn {
+  border: none;
+  background: none;
+  color: #1d9af6;
+  outline: none;
+  position: absolute;
+  right: 14px;
+  top: 18px;
+  font-weight: 600;
+}
+@media screen and (max-width: 960px) {
+  .home-main {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+}

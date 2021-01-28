@@ -1,61 +1,94 @@
 import { createElement } from "../react";
-import { footer } from "../components/footer";
-import { Header } from "../components/header";
+import { footer } from "./footer";
+import "../styles/explore.css";
+import { header } from "./header";
+import { heartPopup } from "./heartPopup";
 
 export const explore = () => {
-  let a = [
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oSjcleP4koAAX-y2ymU&tp=1&oh=82e831735b98793b25a787c9559649df&oe=60282D70",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/120929122_799697230842031_673843017707682555_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=8FoCeLkM8_QAX8pYMz8&tp=1&oh=5f57afc5852981a73fb4613965c586d8&oe=60296648",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/101492944_110201593913712_5819216545209008507_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=HaRKl7lc1t8AX9Ez0rx&tp=1&oh=5d222ac4aa97ebfc91dfa6de002ca219&oe=60294114",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/120929122_799697230842031_673843017707682555_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=8FoCeLkM8_QAX8pYMz8&tp=1&oh=5f57afc5852981a73fb4613965c586d8&oe=60296648",
-    },
-    {
-      imgsrc:
-        "https://scontent.fisb5-1.fna.fbcdn.net/v/t1.0-9/74525989_2551884118414919_4918503290754301952_o.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=PqlF0btZlVkAX_mJq4q&_nc_ht=scontent.fisb5-1.fna&oh=1f4a41ca367aa98ca61d450aef9dae7b&oe=6025F7DF",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/82480125_900364083712961_2300730102031587495_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=Ll7yR3DvqcMAX9q_k1n&tp=1&oh=42db7b8b3d1c7f9679e59f5c26af4e84&oe=6026D801",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/92927520_637730423453488_2019014272054227554_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=0mYWbXuRfckAX9UqZHA&tp=1&oh=47ff177e744fa320317c1d2c92e1c9e8&oe=60294D01",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/82346668_474590323432996_4697610113442128447_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=wJ0yCi30y3QAX_q4Vwl&tp=1&oh=9ef9a5bf0a0634b043c69101c8a78c6a&oe=60282BEA",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/125807820_2713747652287193_325291426103969857_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=iTdaD0R-N0EAX_CTY4F&tp=1&oh=0a32174e7c7c5dbc438216fd1c4d29c3&oe=602A2D01",
-    },
-  ];
-  let b = [];
-  a.forEach((e) => {
-    const galleryImage = createElement("img", {
-      class: "galleryImg",
-      src: e.imgsrc,
+    let img = [
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/136359401_926481617889706_8213824324811968301_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=YeYG2YKkgAcAX_azmQ5&tp=1&oh=dd05a8df6fcaebab5c97c69b54c3a79b&oe=60312483",
+        },
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/121274575_1749196658571543_2996978749485167755_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=g179trNEaX4AX_thGJ1&tp=1&oh=7c63c726f63b575cdf0039b08e95fe38&oe=60329AFB",
+        },
+
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.133.1064.1064a/s640x640/135327051_456037848891112_6490705346542014666_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=W6C0uhO378MAX9F2C-9&tp=1&oh=e5be8ac5dab78c4fdb3bed9347347629&oe=60337E19",
+        },
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.111.929.929a/s640x640/139627146_779001682961040_4014018666493015642_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=C8CYiRZL2JYAX9z8jbY&tp=1&oh=8581cf092dd82b8fb95653a5ceeaec4f&oe=6034032B",
+        },
+
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c240.0.960.960a/s640x640/139000624_212480313846569_2051133962789896099_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=yzpfEuoJc8cAX-oiWXl&tp=1&oh=20a98d8a6f2a2b2164e4503ba922ffe8&oe=6032F624",
+        },
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.19.1080.1080a/s640x640/122734799_412082053139703_3168278925321954175_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=lcIO54cdo30AX8nI4vW&tp=1&oh=7a569c74361751305fc4dfef6e926aea&oe=6034DE90",
+        },
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/91114426_1459361664232620_8287192033603212385_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=TXUEILTr1E8AX9DoSkc&tp=1&oh=8e899f644bab711593abc0c90647b33d&oe=60310363",
+        },
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/137563198_3861949867188643_7169653622087330223_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=PsDFkTI-7BUAX-5mIpJ&tp=1&oh=30411a4559dd8490968adced32404a6e&oe=6032E46D",
+        },
+        {
+            imgSrc:
+                "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c135.0.810.810a/s640x640/92951851_261140218249667_633738424290156198_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=JaNKPfL6Tt0AX-weoy5&tp=1&oh=dd34fc2cf62198336d7f5b12c53e2e8d&oe=60329C79",
+        },
+    ];
+
+    let allImgs = [];
+
+    img.forEach((e) => {
+        const overlayIcon1 = createElement("i", {
+            class: "overlay-icon1 fa fa-comment",
+        });
+        const overlayIcon2 = createElement("i", {
+            class: "overlay-icon2 fa fa-heart",
+        });
+        const overlayDiv = createElement(
+            "div",
+            { class: "overlay" },
+            overlayIcon1,
+            overlayIcon2
+        );
+
+        const imagee = createElement("img", {
+            src: e.imgSrc,
+            class: "overlayimage",
+        });
+        const container = createElement(
+            "div",
+            { class: "container" },
+            imagee,
+            overlayDiv
+        );
+        allImgs.push(container);
     });
-    b.push(galleryImage);
-  });
 
-  const galleryContainer = createElement(
-    "div",
-    { class: "galleryContainer" },
-    b
-  );
+    let gallery = createElement(
+        "div",
+        { class: "gallery" },
+        allImgs,
+        heartPopup([])
+    );
 
-  const footerDiv = createElement("div", { class: "all-footer" }, footer());
-  return createElement("section", null, Header(), galleryContainer, footerDiv);
+    let footerr = createElement("footer", { class: "all-footer" }, footer());
+
+    return createElement(
+        "section",
+        { class: "explore-main" },
+        header(),
+        gallery,
+        footerr
+    );
 };

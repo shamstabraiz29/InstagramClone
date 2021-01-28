@@ -1,12 +1,12 @@
-import { createElement, reactDOM } from "./react";
-import { Layout } from "./components/layout";
 
-import "./style.css";
+import { createElement , reactDOM } from "./react"
+import { layout } from "./components/layout"
 
-const App = () => {
-  const main = createElement("div", null);
-  const layout = createElement("div", null, Layout());
-  main.appendChild(layout);
-  return main;
-};
-reactDOM.render(App(), document.getElementById("root"));
+ 
+const App =()=>{
+
+let fragement=document.createDocumentFragment()
+fragement.append(layout())
+    return fragement;
+}
+reactDOM.render(App(),document.getElementById('root'))

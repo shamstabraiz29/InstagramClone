@@ -1,150 +1,205 @@
 import { createElement } from "../react";
+import { header } from "./header";
+import "../styles/profile.css";
 import { footer } from "./footer";
-import { Header } from "../components/header";
+import { heartPopup } from "./heartPopup";
+import { model } from "./modelBoxe"
+
+
 
 export const profile = () => {
-  const profileSection = createElement(
-    "div",
-    { class: "profileContainer" },
-    createElement(
-      "div",
-      { class: "profileSection" },
-      // profile image section
-      createElement(
-        "div",
-        { class: "imgContainer" },
-        createElement("img", {
-          class: "proimg",
-          src:
-            "https://images.unsplash.com/photo-1481437642641-2f0ae875f836?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8bWVufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        })
-      ),
+  //gallery loop
 
-      // discreption Container
-      createElement(
-        "div",
-        { class: "discreptionContainer" },
-        createElement(
-          "div",
-          null,
-          createElement("span", { class: "username" }, "kifayatkifoo136"),
-          createElement(
-            "span",
-            null,
-            createElement("button", { class: "editBtn" }, "Edit Profile")
-          ),
-          createElement("i", { class: "fa fa-cog" })
-        ),
-        createElement(
-          "div",
-          null,
-          createElement("span", { class: "profilePost" }, "<b> 28 </b> Posts"),
-          createElement(
-            "span",
-            { class: "profilePost" },
-            "<b>146 </b> followers"
-          ),
-          createElement(
-            "span",
-            { class: "profilePost" },
-            "<b>146 </b> following"
-          )
-        ),
+  let imgs = [
+    {
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/136359401_926481617889706_8213824324811968301_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=YeYG2YKkgAcAX_azmQ5&tp=1&oh=dd05a8df6fcaebab5c97c69b54c3a79b&oe=60312483",
+    },
+    {
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/121274575_1749196658571543_2996978749485167755_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=g179trNEaX4AX_thGJ1&tp=1&oh=7c63c726f63b575cdf0039b08e95fe38&oe=60329AFB",
+    },
 
-        createElement("p", null, "<b>kifayat kifoo</b>"),
-        createElement("p", null, "meer -e- mehfill")
-      )
-    ),
+    {
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.133.1064.1064a/s640x640/135327051_456037848891112_6490705346542014666_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=W6C0uhO378MAX9F2C-9&tp=1&oh=e5be8ac5dab78c4fdb3bed9347347629&oe=60337E19",
+    },
+    {
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.111.929.929a/s640x640/139627146_779001682961040_4014018666493015642_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=C8CYiRZL2JYAX9z8jbY&tp=1&oh=8581cf092dd82b8fb95653a5ceeaec4f&oe=6034032B",
+    },
 
-    createElement("hr", null),
-    createElement(
-      "div",
-      { class: "links" },
-      createElement(
-        "i",
-        { class: "link fa fa-th" },
-        ' &nbsp;  <a href="">POSTS</a>'
-      ),
-      createElement(
-        "i",
-        { class: "link fa fa-tv" },
-        ' &nbsp;  <a href="">IGTV</a>'
-      ),
-      createElement(
-        "i",
-        { class: "link far fa-bookmark" },
-        ' &nbsp;   <a href="">SAVED</a>'
-      ),
-      createElement(
-        "i",
-        { class: "link fa fa-id-badge" },
-        ' &nbsp;   <a href="">TAGGED</a>'
-      )
-    )
-
-    // gallery
-  );
-  let a = [
     {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oSjcleP4koAAX-y2ymU&tp=1&oh=82e831735b98793b25a787c9559649df&oe=60282D70",
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c240.0.960.960a/s640x640/139000624_212480313846569_2051133962789896099_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=yzpfEuoJc8cAX-oiWXl&tp=1&oh=20a98d8a6f2a2b2164e4503ba922ffe8&oe=6032F624",
     },
     {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/118712186_411099289860573_1451770521398276991_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=J23ALa_Op2sAX_jh1T2&tp=1&oh=b3a2666fecbd8fbb60b0b82f0089ac80&oe=602A3E80",
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.19.1080.1080a/s640x640/122734799_412082053139703_3168278925321954175_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=lcIO54cdo30AX8nI4vW&tp=1&oh=7a569c74361751305fc4dfef6e926aea&oe=6034DE90",
     },
     {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/116907540_754959191923042_6219581054835634309_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=t9FBj3AZERYAX9yY43D&tp=1&oh=1f5a43edd262a59f09990ce7f2525076&oe=60285522",
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/91114426_1459361664232620_8287192033603212385_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=TXUEILTr1E8AX9DoSkc&tp=1&oh=8e899f644bab711593abc0c90647b33d&oe=60310363",
     },
     {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/106031545_1429499090571507_2182398040872607801_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=8Erkpur2xlcAX_akiXW&tp=1&oh=4e68514c63b8dd2f097368d413788e2e&oe=6026BF92",
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/137563198_3861949867188643_7169653622087330223_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=PsDFkTI-7BUAX-5mIpJ&tp=1&oh=30411a4559dd8490968adced32404a6e&oe=6032E46D",
     },
     {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/101492944_110201593913712_5819216545209008507_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=HaRKl7lc1t8AX8NDZmL&tp=1&oh=1562f70d2db4b30275b6452ea36c4a02&oe=60294114",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/82480125_900364083712961_2300730102031587495_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=Ll7yR3DvqcMAX9q_k1n&tp=1&oh=42db7b8b3d1c7f9679e59f5c26af4e84&oe=6026D801",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/92927520_637730423453488_2019014272054227554_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=0mYWbXuRfckAX9UqZHA&tp=1&oh=47ff177e744fa320317c1d2c92e1c9e8&oe=60294D01",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/82346668_474590323432996_4697610113442128447_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=wJ0yCi30y3QAX_q4Vwl&tp=1&oh=9ef9a5bf0a0634b043c69101c8a78c6a&oe=60282BEA",
-    },
-    {
-      imgsrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/125807820_2713747652287193_325291426103969857_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=iTdaD0R-N0EAX_CTY4F&tp=1&oh=0a32174e7c7c5dbc438216fd1c4d29c3&oe=602A2D01",
+      imgSrc:
+        "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c135.0.810.810a/s640x640/92951851_261140218249667_633738424290156198_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=JaNKPfL6Tt0AX-weoy5&tp=1&oh=dd34fc2cf62198336d7f5b12c53e2e8d&oe=60329C79",
     },
   ];
-  let b = [];
-  a.forEach((e) => {
-    const galleryImage = createElement("img", {
-      class: "galleryImg",
-      src: e.imgsrc,
-    });
 
-    b.push(galleryImage);
+  let allImgs = [];
+
+  imgs.forEach((e) => {
+    const overlayIcon1 = createElement("i", {
+      class: "overlay-icon1 fa fa-comment",
+    });
+    const overlayIcon2 = createElement("i", {
+      class: "overlay-icon2 fa fa-heart",
+    });
+    const overlayDiv = createElement(
+      "div",
+      {
+        class: "overlay"
+      },
+
+      overlayIcon1,
+      overlayIcon2
+    );
+
+    const imagee = createElement("img", {
+      src: e.imgSrc,
+      class: "overlayimage",
+
+    });
+    const container = createElement(
+      "div",
+      {
+        class: "container",
+
+
+        onclick: (n) => {
+
+          var i = n.target.parentElement.firstChild.getAttribute("src");
+
+          var modelBox = document.querySelector(".model-box ");
+
+          var c = document.querySelector(".model-box .model-img");
+
+          if (!modelBox.style.display) {
+            modelBox.style.display = "block"
+            c.setAttribute("src", i)
+          } else {
+            modelBox.style.display = ""
+          }
+
+
+        }
+      },
+      imagee,
+      overlayDiv
+    );
+    allImgs.push(container);
   });
 
-  const galleryContainer = createElement(
+  const profileGallery = createElement(
     "div",
-    { class: "galleryContainer" },
-    b
+    { class: "profileGallery" },
+    allImgs,
   );
 
-  const profileFoter = createElement("div", { class: "all-footer" }, footer());
+  ///  profile Gallery Icon
+  const postIcon = createElement("i", { class: "postt-icon fa fa-th" });
+  const iGTvIcon = createElement("i", { class: "igtv-icon fa fa-tv" });
+  const savedIcon = createElement("i", {
+    class: " savedd-icon far fa-bookmark",
+  });
+  const taggedIcon = createElement("i", {
+    class: "taggedd-icon  fa fa-id-badge",
+  });
+  const galleryIcons = createElement(
+    "div",
+    { class: "gallery-Icons" },
+    postIcon,
+    iGTvIcon,
+    savedIcon,
+    taggedIcon
+  );
+
+  const profileGalleryIcons = createElement("div", null, galleryIcons);
+
+  /// fullName Div
+  const caption = createElement("p", null, "A Boy from North");
+  const fullName1 = createElement("h3", null, "Shams Tabraiz Baig");
+  const fullNameDiv = createElement(
+    "div",
+    { class: "full-name-divv" },
+    fullName1,
+    caption
+  );
+  //// followers Div
+  const following = createElement("p", { class: "following" }, "following");
+  const followers = createElement("p", { class: "followers" }, "followers");
+  const post1 = createElement("p", { class: "post1" }, "post");
+  const followersDiv = createElement(
+    "div",
+    { class: "followers-divv" },
+    post1,
+    followers,
+    following
+  );
+
+  /// username div
+  const editIcon = createElement("i", { class: "fa fa-cog" });
+  const editBtn = createElement("button", null, "edit profile");
+  const infoName = createElement("h1", null, "shamstabaiz29");
+  const usernameDiv = createElement(
+    "div",
+    { class: "user-name-div" },
+    infoName,
+    editBtn,
+    editIcon
+  );
+
+  /// innerinfo div
+  const innerinfoDiv = createElement(
+    "div",
+    { class: "inner-info-div" },
+    usernameDiv,
+    followersDiv,
+    fullNameDiv,
+    model(),
+  );
+
+  /// image
+  const profileImage = createElement("img", {
+
+    class: "prf-image",
+    src:
+      "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/116701613_336290860718596_7765623644053597489_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=sahX302g8QoAX9roOzt&tp=1&oh=bcefcc6ad2c3f232da56d7af5b300397&oe=6035ED62",
+  });
+
+  const infoDiv = createElement(
+    "div",
+    { class: "prof-div" },
+    profileImage,
+    innerinfoDiv
+  );
+  /// main div
+  const profileMain = createElement("div", { class: "profile-main" }, infoDiv);
+  ///footer
+  const footerr = createElement("footer", { class: "all-footer" }, footer());
   return createElement(
     "section",
     null,
-    Header(),
-    profileSection,
-    galleryContainer,
-    profileFoter
+    header(),
+    profileMain,
+    profileGalleryIcons,
+    profileGallery,
+    heartPopup(),
+    footerr
   );
 };

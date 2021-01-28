@@ -1,25 +1,34 @@
-import { profile } from "./profile";
 import { home } from "./home";
 import { explore } from "./explore";
 import { messenger } from "./messenger";
-import { notification } from "./notification";
-import { login } from "./login";
-import { Ereror } from "./error";
+import { login } from './login'
+import { Ereror } from './eeror'
+import { profile } from "./profile";
+let path = window.location.pathname;
+export const layout = () => {
 
-export const Layout = () => {
-  if (location.pathname === "/") {
-    return login();
-  } else if (location.pathname === "/home") {
-    return home();
-  } else if (location.pathname === "/profile") {
-    return profile();
-  } else if (location.pathname === "/explore") {
-    return explore();
-  } else if (location.pathname === "/messenger") {
-    return messenger();
-  } else if (location.pathname === "/notification") {
-    return notification();
-  } else {
-    return Ereror();
+  switch (path) {
+    case "/":
+      return login();
+      break;
+    case "/home":
+      return home()
+      break;
+    case "/messenger":
+      return messenger();
+      break;
+    case "/explore":
+      return explore();
+      break;
+    case "/profile":
+      return profile();
+      break;
+    default:
+      return Ereror();
+
   }
+
 };
+
+
+

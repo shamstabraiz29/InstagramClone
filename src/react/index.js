@@ -1,18 +1,18 @@
-export const createElement = (elementType, props, ...children) => {
-  const element = document.createElement(elementType);
+export const createElement = (elmentType, props, ...children) => {
+  const element = document.createElement(elmentType);
   children.forEach((child) => {
-    if (typeof child === "object") {
+    if (typeof children === "object") {
       if (Array.isArray(child)) {
         child.forEach((innerChild) => {
           element.appendChild(innerChild);
         });
       } else {
-        element.appendChild(child);
+        element.append(child);
       }
     } else {
       element.innerHTML = children;
     }
-  });
+  })
   return handleProps(element, props);
 };
 
@@ -26,13 +26,14 @@ const handleProps = (element, props) => {
           element.setAttribute(prop, props[prop]);
         }
       }
-    });
+    })
   }
   return element;
-};
+}
+
 
 export const reactDOM = {
   render: (element, rootElement) => {
-    rootElement.appendChild(element);
-  },
-};
+    rootElement.append(element)
+  }
+}
