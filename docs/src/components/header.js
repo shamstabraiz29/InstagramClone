@@ -36,6 +36,7 @@ export const header = () => {
 
                 onclick: () => {
                     var aa = document.querySelector(".show");
+                    console.log(aa);
 
                     if (!aa.style.display) {
                         aa.style.display = "block";

@@ -8,4 +8,3 @@ export const Ereror = () => {
 
   return createElement("div", { class: "error-div" }, ErrorIcon, heading);
 };
-

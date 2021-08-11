@@ -59,7 +59,7 @@ export const heartPopup = () => {
 
 
 
-  const paa = createElement('p', { class: "show", }, loopMainDiv)
+  const paa = createElement('div', { class: "show", }, loopMainDiv)
 
 
   return createElement('div', { class: "popup-div" }, paa)

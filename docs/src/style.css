@@ -103,6 +103,7 @@ header .nav-input {
   right: 17%;
   width: 30%;
   z-index: 1;
+  /* overflow: scroll; */
   height: 50vh;
   border-radius: 5px;
   box-shadow: 2px 3px 6px 0px black;
